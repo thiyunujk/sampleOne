@@ -172,7 +172,11 @@
 #print(f'total price is : {total}')
 
 
-name = input('what is your name? ')
-color = input('your favourite color? ')
-print('Hi ' + name)
-print(name + "'s favourite color is " + color)
+#name = input('what is your name? ')
+#color = input('your favourite color? ')
+#print('Hi ' + name)
+#print(name + "'s favourite color is " + color)
+
+name = 'python for beginners'
+x = name.split()
+print(x)
