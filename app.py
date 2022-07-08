@@ -177,6 +177,13 @@
 #print('Hi ' + name)
 #print(name + "'s favourite color is " + color)
 
-name = 'python for beginners'
-x = name.split()
-print(x)
+#name = 'python for beginners'
+#x = name.split()
+#print(x)
+
+numbers = [2, 2, 4, 6, 3, 4, 6, 1]
+uniques = []
+for number in numbers:
+    if number not in uniques:
+        uniques.append(number)
+print(uniques)        
