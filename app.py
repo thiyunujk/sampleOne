@@ -181,9 +181,79 @@
 #x = name.split()
 #print(x)
 
-numbers = [2, 2, 4, 6, 3, 4, 6, 1]
-uniques = []
-for number in numbers:
-    if number not in uniques:
-        uniques.append(number)
-print(uniques)        
+#numbers = [2, 2, 4, 6, 3, 4, 6, 1]
+#uniques = []
+#for number in numbers:
+#    if number not in uniques:
+#        uniques.append(number)
+#print(uniques)      
+
+#tuples
+#numbers = (1,2,3)
+#print(numbers [0])
+#items are immutabale. 
+
+
+#number = input("phone : ")
+#dgit_mapping = {
+#    "1" : "one",
+#    "2" : "two",
+#    "3" : "three",
+#    "4" : "four",
+#    "5" : "five",
+#    "6" : "six",
+#    "7" : "seven",
+#    "8" :"eight",
+#    "9" : "nine",
+#    "0" : "zero"
+#}
+#output= ""
+#for chr in number :
+#   output+= dgit_mapping.get(chr, "!") + " "
+#print(output)   
+
+#emoji conveter
+#message = input(">")
+#words = message.split(' ')
+#emojis = {
+#    ":)" : "😊" ,
+#    ":(" : "😒"
+#}
+#output =""
+#for word in words:
+#    output += emojis.get(word, word) + " "
+#print(output)
+
+#def greet_user(first_name, last_name):
+#    print(f"hy {first_name} {last_name}!")
+#    print("welcome to sl")
+#
+#print("start")
+#greet_user("john", "smith")
+#greet_user("Mary", "suzan")
+#print("finish")   
+#allways use positional argument first &then use the key word arguement.
+#  
+
+#def square(number):
+#    return number*number
+#
+##result = square(3)
+#print(square(9))   
+
+
+
+def emoji_conveter(message):
+    words = message.split(' ')
+    emojis = {
+    ":)" : "😊" ,
+    ":(" : "😒"
+    }
+    output =""
+    for word in words:
+        output += emojis.get(word, word) + " "
+    return output    
+
+message = input(">")
+result = emoji_conveter(message)
+print(result)
